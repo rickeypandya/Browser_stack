@@ -1,0 +1,6 @@
+com/scrapper/ElPaisScraper.class
+com/scrapper/DriverRunner$ScraperTask.class
+com/scrapper/Article.class
+com/scrapper/Translator.class
+com/scrapper/WordFrequencyAnalyzer.class
+com/scrapper/DriverRunner.class

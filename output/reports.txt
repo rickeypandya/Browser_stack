@@ -1,0 +1,3 @@
+Repeated Words (occurring more than twice):
+
+No word appears more than twice.

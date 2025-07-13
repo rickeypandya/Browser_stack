@@ -1,4 +1,4 @@
-package main.java.com.scrapper ;
+package com.scrapper ;
 
 
 import java.io.IOException;

@@ -16,11 +16,12 @@
 
     <dependencies>
         <!-- ✅ Selenium for browser automation -->
-        <dependency>
+            <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.21.0</version>
+            <version>3.141.59</version>
         </dependency>
+
 
         <!-- ✅ WebDriverManager to manage browser drivers -->
         <dependency>
@@ -42,12 +43,35 @@
             <artifactId>gson</artifactId>
             <version>2.10.1</version>
         </dependency>
-        
+
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
         <version>20240303</version>
     </dependency>
+
+    <dependency>
+        <groupId>com.browserstack</groupId>
+        <artifactId>browserstack-java-sdk</artifactId>
+        <version>LATEST</version>
+    </dependency>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.21.0</version>
+    </dependency>
+    <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>4.12.0</version>
+    </dependency>
+    <dependency>
+        <groupId>com.squareup.okio</groupId>
+        <artifactId>okio</artifactId>
+        <version>3.9.0</version>
+    </dependency>
+    
+
     </dependencies>
 
     <build>
@@ -61,6 +85,18 @@
                     <mainClass>main.java.com.scrapper.ElPaisScraper</mainClass>
                 </configuration>
             </plugin>
+            <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>java</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
         </plugins>
     </build>
 </project>

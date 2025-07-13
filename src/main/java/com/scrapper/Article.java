@@ -1,4 +1,4 @@
-package main.java.com.scrapper;
+package com.scrapper;
 
 public class Article {
     private String spanishTitle;
